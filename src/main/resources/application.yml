@@ -1,0 +1,18 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /resource
+  tomcat:
+    uri-encoding: UTF-8
+      
+spring:  servlet:    multipart:      max-file-size: 1024MB
+      max-request-size: 1024MB
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    include: test
+    active: test
+  output:
+    ansi:
+      enabled: detect
+      
